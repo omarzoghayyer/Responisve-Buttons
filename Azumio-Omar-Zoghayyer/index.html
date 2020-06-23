@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+</head>
+<header>
+    <h2 class="main-header">What are your main area of focus?</h2>
+    <h3 class="main-header-2">This will help us build a personalized experience for you</h3>
+</header>
+
+<body>
+    <section>
+        <div class="container">
+            <button class="main-button">Blood Glucose </button>
+            <button class="main-button">Medication</button>
+        </div>
+
+        <div class="container">
+            <button class="main-button">Food Tracking</button>
+            <button class="main-button">Exercise</button>
+        </div>
+
+        <div class="container">
+            <button class="main-button">Weight Management</button>
+            <button class="main-button">Blood Pressure</button>
+        </div>
+        <div class="container">
+            <button class="main-button">A1C</button>
+        </div>
+        </div>
+    </section>
+
+
+</body>
+<footer class="fixed-footer">
+    <div class="slideshow-container">
+        <!-- this section is built to navigate to different pages upon clicking the done, or back buttos -->
+        <div class="dotSlides fade">
+        </div>
+        <div class="dotSlides fade">
+        </div>
+        <div class="dotSlides fade">
+        </div>
+        <div class="dotSlides fade">
+        </div>
+        <div class="dotSlides fade">
+        </div>
+
+        <a class="back" onclick="nextPage(-1)">BACK</a>
+        <a class="done" onclick="nextPage(1)">DONE</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+</html>
